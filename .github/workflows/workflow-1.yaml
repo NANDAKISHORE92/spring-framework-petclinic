@@ -21,3 +21,9 @@ jobs:
           ls ${{ runner.tool_cache }}
 
       - run: echo "This job's status is ${{ job.status }}"
+
+  Second-job:
+    name: Running second job now
+    runs-on: windows-latest
+    steps:
+      - run: echo "This job is running on ${{ runner.os }}"
