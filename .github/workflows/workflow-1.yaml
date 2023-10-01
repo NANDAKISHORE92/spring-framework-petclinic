@@ -25,5 +25,6 @@ jobs:
   Second-job:
     name: Running second job now
     runs-on: windows-latest
+    needs: Example-job
     steps:
       - run: echo "This job is running on ${{ runner.os }}"
